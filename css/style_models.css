@@ -1,0 +1,118 @@
+@import 'product_models.css';
+@import 'nav.css';
+@import 'footer.css';
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body{
+	background: #fff;
+	margin: 0;
+}
+
+.logo {
+    background: url(../img/logo/logo-dark.svg);
+}
+
+nav ul li a {
+      color: #000;
+}
+
+.nav-btn i {
+    background: #000;
+}
+
+header{
+	height: 100px;
+}
+
+.container {
+	width: 80%;
+	padding: 0;
+	margin: 0 auto;
+	widows: 100%;
+	margin-bottom: 80px;
+}
+
+.model-class{
+	position: absolute;
+	margin: 0;
+	font-size: 130px;
+	opacity: 0.1;
+}
+
+.container hr {
+	width: 80%;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	color: grey;
+	opacity: 0.5;
+	size 5;
+}
+
+.grid_container_models{
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-gap: 10px 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.models{
+	z-index: 1;
+	width: 330px;
+	margin: 0 auto;
+	display:inline-block;
+	height: cover;
+}
+
+@media screen and (max-width: 1700px) {
+	.container{
+		width: 90%;
+	}
+
+	.models{
+	  	width: 270px;
+	}
+
+	.product_img{
+		width: 270px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.grid_container_models{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.container{
+		width: 100%;
+	}
+
+	.grid_container_models{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.models{
+	  width: 230px;
+	}
+
+	.product_img{
+		width: 230px;
+	}
+
+	.left_head{
+      margin-left: 0%;
+	}
+}
+
+
+
+

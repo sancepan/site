@@ -1,0 +1,36 @@
+.product {
+	width: 330px;
+	padding: 20px;
+	padding-bottom: 0;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+.product_img {
+	margin-top: 28px;
+	width: 330px;
+}
+
+.product__title {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-weight: 100;
+	font-size: 24px;
+	width: 80%;
+	color: var(--color-dark);
+}
+
+.product__props {
+	margin-bottom: 8px;
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	color: var(--color-dark)
+}
+
+.product_price {
+	margin-right: 12px;
+	font-size: 18px;
+	opacity: 0.6;
+}

@@ -1,0 +1,131 @@
+@import 'global.css';
+@import 'normalize.css';
+@import 'product_catalog.css';
+@import 'nav.css';
+@import 'footer.css';
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background: url(../img/logo/logo-dark.svg);
+}
+
+nav ul li a {
+      color: #000;
+}
+
+.cool-link::after{
+      background: #000;
+}
+
+.nav-btn i {
+    background: #000;
+}
+
+
+:root {
+	--gutter: 20px;
+}
+
+.container {
+	/* max-width: 1234px; */
+	margin-left: 50%;
+	padding: 0 var(--gutter);
+	margin: 0 auto;
+	widows: 100%;
+	padding: 2em;
+	padding-bottom: 80px;
+}
+
+.grid-container {
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.products-grid {
+	grid-column: 4 span;
+	display: grid;
+	margin:0 auto;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width: 1700px) {
+	.grid-container {
+	width: 100%;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(3, 1fr);
+	}
+
+	.products-grid {
+	grid-column: 3 span;
+	display: grid;
+	margin:0 auto;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.grid-container {
+	width: 100%;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(2, 1fr);
+	}
+
+	.products-grid {
+	grid-column: 2 span;
+	display: grid;
+	margin:0 auto;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.grid-container {
+	width: 100%;
+	display: grid;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(1, 1fr);
+	}
+
+	.products-grid {
+	grid-column: 1 span;
+	display: grid;
+	margin:0 auto;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.filters {
+	position: relative;
+}
+
+.filters-price__input {
+	width: 100%;
+}
+
+.fixed {
+	position: fixed;
+	top: var(--gutter);
+	left: 0;
+}
+
+.absolute {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}

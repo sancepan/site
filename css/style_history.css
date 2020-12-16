@@ -1,0 +1,138 @@
+@import 'nav.css';
+@import 'footer.css';
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background: url(../img/logo/logo-dark.svg);
+}
+
+nav ul li a {
+      color: #000;
+}
+
+.cool-link::after{
+      background: #000;
+}
+
+.nav-btn i {
+    background: #000;
+}
+
+
+
+
+
+body{
+	margin: 0;
+    background: #fff;
+}
+
+.head{
+	margin-top: 2em;
+	margin-bottom: 2em;	
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-color: #dcb88b;
+}
+
+.head_container{
+	width: 80%;
+	margin:0 auto;
+}
+
+.head_container h1{
+	text-align: center;
+	font-size: 50px;
+	width: 100%;
+}
+
+.grid_head{
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 55%;
+	display: grid;
+	position: relative;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.grid_head div{
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.grid_head div img{
+	width: 100%;
+}
+
+.grid_head div p{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+
+.container{
+    width:60%;
+    margin:0 auto;
+    padding-bottom: 80px;
+}
+
+.container h1{
+	text-align: center;
+	font-size: 38px;
+}
+
+.container img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.text{
+    line-height: 25px;
+	max-width: 600px;
+}
+
+p{
+	padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.head{
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-color: #dcb88b;
+	}
+
+
+	.head_container h1{
+		font-size: 40px;
+	}
+
+	.grid_head{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.container h1{
+		text-align: center;
+		font-size: 28px;
+	}
+
+	.container{
+	    width:80%;
+	    margin:0 auto;
+	    line-height: 25px;
+	}
+}

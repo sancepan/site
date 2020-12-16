@@ -1,0 +1,349 @@
+@import 'nav.css';
+@import 'footer.css';
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    background: url(../img/logo/logo-light.svg);
+}
+
+nav ul li a {
+      color: #fff;
+}
+
+.cool-link::after{
+      background: #fff;
+}
+
+.nav-btn i {
+    background: #fff;
+}
+
+:root {
+  --gutter: 20px;
+}
+
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.welcome{
+    position: absolute;
+    width: 90%; 
+    left: 5%;
+    bottom: 5%;  
+}
+
+header {
+    margin: 0;
+    width: 100%;
+}
+
+.welcome h1 {
+    text-transform: uppercase;
+    color: white; 
+    font-size: 228%;
+    margin: 0;
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(../img/main/start.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    min-width: 1000px;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    ​​​​​​​background-repeat: no-repeat;
+}
+
+.container {
+    z-index: 2;
+    margin: 0.5%;
+    padding-bottom: 0%;
+    text-emphasis: justify;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    color: grey;
+    width: 99%;
+}
+
+.grid_container_news{
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid_container_footer{
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-gap: var(--gutter);
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.bmw_history_grid{
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  position: relative;
+  grid-gap: var(--gutter);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bmw_history_grid div{
+  width: 100%;
+  padding-right: 3%;
+  margin: 0 auto;
+}
+
+.bmw_history_grid img{
+  width: 100%;
+  float: left;
+}
+
+.bmw_history_grid div button {
+  border: none;
+  padding: 14px 0;
+  border-radius: 4px;
+  width: 230px;
+  color: #fff;
+  background-color: #1c69d4;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+
+.bmw_history_grid div button:hover {
+  background-color: #0653b6;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1700px) {
+  .grid_container_news{
+  	grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid_container_footer{
+  	grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .grid_container_news{
+  	grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_container_footer{
+  	grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bmw_history_grid{
+  	grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .grid_container_news{
+  	grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid_container_footer{
+  	grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bmw_history_grid{
+  	grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.black{
+  z-index: 1;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: #111;
+  width: 94%;
+  color: white;
+}
+
+.white{
+  z-index: -1;
+  background: white;
+  position: absolute;
+  width: 150%;
+  top: 50%;
+  margin-left: -25%;
+}
+
+.news{
+  z-index: 1;
+  width: 380px;
+  margin: 0 auto;
+  display:inline-block;
+  height: cover;
+}
+
+.news img{
+  height: 188px;
+  width: 100%;
+}
+
+.title_news{
+	text-transform: uppercase;
+	font-size: 150%;
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+
+.info_news{
+	color: grey;
+	margin-top: 0;
+	margin-bottom: 33px;
+}
+
+.black h1{
+	margin-bottom: 35px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.more_news{
+	color: white;
+}
+
+.more_news:hover{
+	text-decoration: underline;
+}
+
+.white_container{
+	background-color: white;
+	color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.black_container{
+	background-color: black;
+	position: absolute;
+	width: 120%;
+	left: -10%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer{
+	padding-top:180px;
+	padding-bottom: 180px;
+}
+
+.container_1{
+  width:70%;
+  margin:0 auto;
+}
+
+.container_1 p{
+  width:30%;
+  font-size: 14px;
+}
+
+.container_1 h3{
+  color: white;
+}
+
+.grid_container_footer ul li{
+	list-style-type: none;
+}
+
+.grid_container_footer ul{
+	padding:0;
+}
+
+.grid_container_footer p{
+	border-bottom: 1px dotted;
+}
+
+.social-media ul li{
+      list-style: none;
+      padding-top: 20px;
+      display: inline;
+}
+
+.social-media ul li img {
+      width: 28px;
+      height: 25px;
+}
+
+.social-media ul {
+	margin-top: 80px;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+
+.grid_container_footer li:nth-child(n+4) {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
